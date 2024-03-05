@@ -1,0 +1,274 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    /* background-color: aqua; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    overflow-x: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#curr_wthr_container {
+    display: flex;
+    position: relative;
+    left: 45px;
+    gap: 10px;
+}
+
+#temp {
+    display: flex;
+}
+
+#curr_weather_icon {
+    height: 100px;
+    width: 100px;
+}
+
+#curr_weather_temp {
+    height: fit-content;
+    width: fit-content;
+    font-size: 4em;
+}
+
+#degree {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+#location {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 20px;
+}
+
+#current_time_info {
+    display: flex;
+    flex-direction: column;
+}
+
+#curr_day_and_date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 150px;
+    height: 100px;
+    gap: 2px;
+    position: relative;
+    left: 850px;
+    top: 10px;
+}
+
+#curr_time {
+    font-size: 1.1em;
+}
+
+#curr_day {
+    font-size: 1.4em;
+}
+
+#curr_date {
+    font-size: 1.2em;
+}
+
+
+#curr_other_info_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 45px;
+}
+
+#other_info_left_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_parent_container {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#weather_type_container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: start; */
+    width: 200px;
+    height: 60px;
+    gap: 6px;
+    /* font-size: 1.3em; */
+    /* padding-top: 10px; */
+    text-align: center;
+}
+
+#day_night_temp_container {
+    display: flex;
+    flex-direction: column;
+    height: 60;
+    gap: 6px;
+    transform: translateX(22px);
+}
+
+#vr1 {
+    height: 50px;
+    border: 1px dotted black;
+}
+
+#sunrise_sunset_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+
+
+#sunrise_container {
+    transform: translateX(10px);
+    display: flex;
+    gap: 15px;
+}
+
+#sunset_container {
+    transform: translateX(60px);
+    display: flex;
+    gap: 15px;
+}
+
+.time {
+    transform: translateY(10px);
+}
+
+#other_info_right_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 125px;
+    top: 75px;
+}
+
+#weather_detailed_info_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_gparent_container {
+    display: flex;
+    height: auto;
+    width: auto;
+    gap: 60px;
+}
+
+.right_parent_container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.icon_text {
+    display: flex;
+}
+
+.hr_container {
+    display: flex;
+    gap: 60px;
+    margin: 10px 0px;
+}
+
+.hr_line {
+    width: 200px;
+    border: 1px dotted black;
+}
+
+#container3 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 80px;
+    top: 160px;
+    font-size: 1.1em;
+}
+
+#summary_description {
+    text-decoration: underline;
+}
+
+#next_24_hours_container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 240px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+    /* margin: 3px 10px 0px 10px; */
+}
+
+.hr_wthr_icon {
+    width: 40px;
+    height: 40px;
+    margin: -5px 0px;
+}
+
+.hr_time {
+    font-size: small;
+}
+
+.hr_temp_val {
+    transform: translateX(2px);
+}
+
+#next_7_days_container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 240px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    height: 100px;
+    margin-top: 7px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* margin: 3px 10px 0px 10px; */
+}
+
+.day_wthr_icon {
+    width: 70px;
+    height: 70px;
+    margin: -10px 0px;
+}
+
+.day_name {
+    font-size: small;
+}
+
+.day_temp_val {
+    padding-top: 2px;
+    transform: translateX(2px);
+}

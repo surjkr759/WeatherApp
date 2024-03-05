@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id="main">
+    <div id="curr_wthr_container">
+        <div id="curr_weather_icon"></div>
+        <div id="temp">
+            <div id="curr_weather_temp"></div>
+            <div id="degree"></div>
+        </div>
+        <div id="location">
+            <div id="locName"></div>
+        </div>
+        <div id="current_time_info">
+            <div id="curr_day_and_date">
+                <div id="curr_time"></div>
+                <div id="curr_day"></div>
+                <div id="curr_date"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="curr_other_info_container">
+        <div id="other_info_left_container">
+            <div id="weather_type_parent_container" class="left_parent_container">
+                <div id="weather_type_container">
+                    <div id="feels_like"></div>
+                    <div id="weather_type"></div>
+                </div>
+                <div id="vr1"></div>
+                <div id="day_night_temp_container">
+                    <div id="day_temp"></div>
+                    <div id="night_temp"></div>
+                </div>
+            </div>
+            <div id="sunrise_sunset_container" class="left_parent_container">
+                <div id="sunrise_container">
+                    <div id="sunrise_time" class="time"></div>
+                </div>
+                <div id="sunset_container">
+                    <div id="sunset_time" class="time"></div>
+                </div>
+            </div>
+            <!-- <div id="moonrise_moonset_container" class="left_parent_container">
+                <div id="moonrise_container">
+                    <div id="moonrise_time" class="time"></div>
+                </div>
+                <div id="moonset_container">
+                    <div id="moonset_time" class="time"></div>
+                </div>
+            </div> -->
+        </div>
+        <div id="other_info_right_container">
+            <div id="weather_detailed_info_container">
+                <div id="today_hi_lo_weather_and_wind_info_container" class="right_gparent_container">
+                    <div id="today_hi_lo_container" class="right_parent_container">
+                        <div id="hi_lo_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;High/Low</div>
+                        </div>
+                        <div id="today_hi_lo_temp_value"></div>
+                    </div>
+                    <div id="wind_info_container" class="right_parent_container">
+                        <div id="wind_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;Wind</div>
+                        </div>
+                        <div id="wind_value"></div>
+                    </div>
+                </div>
+
+                <div class="hr_container">
+                    <div class="hr_line"></div>
+                    <div class="hr_line"></div>
+                </div>
+
+                <div id="today_precipitation_and_humidity_info_container" class="right_gparent_container">
+                    <div id="humidity_info_container" class="right_parent_container">
+                        <div id="humidity_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;Humidity</div>
+                        </div>
+                        <div id="humidity_value"></div>
+                    </div>
+                    <div id="today_precipitaion_container" class="right_parent_container">
+                        <div id="precipitation_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;PoP</div>
+                        </div>
+                        <div id="today_precipitation_value"></div>
+                    </div>
+                </div>
+
+                <div class="hr_container">
+                    <div class="hr_line"></div>
+                    <div class="hr_line"></div>
+                </div>
+
+                <div id="today_visibility_and_uv_index_info_container" class="right_gparent_container">
+                    <div id="uv_index_info_container" class="right_parent_container">
+                        <div id="uv_index_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;UV Index</div>
+                        </div>
+                        <div id="uv_index_value"></div>
+                    </div>
+                    <div id="visibility_info_container" class="right_parent_container">
+                        <div id="visibility_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;Visibility</div>
+                        </div>
+                        <div id="visibility_value"></div>
+                    </div>
+                </div>
+
+                <div class="hr_container">
+                    <div class="hr_line"></div>
+                    <div class="hr_line"></div>
+                </div>
+
+                <div id="today_pressure_and_dew_info_container" class="right_gparent_container">
+                    <div id="pressure_info_container" class="right_parent_container">
+                        <div id="pressure_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;Pressure</div>
+                        </div>
+                        <div id="pressure_value"></div>
+                    </div>
+                    <div id="dew_info_container" class="right_parent_container">
+                        <div id="dew_icon_text" class="icon_text">
+                            <div>&nbsp;&nbsp;Dew</div>
+                        </div>
+                        <div id="dew_value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container3">
+        <div id="summary">Summary: &nbsp;</div>
+        <div id="summary_description"></div>
+    </div>
+
+    <div id="next_24_hours_container"></div>
+    <div id="next_7_days_container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
