@@ -30,7 +30,7 @@ const init = async () => {
         const loc = await getUsersCurrentLocationData();
         const weather = await getWeatherData(loc.latitude, loc.longitude);
         
-        console.log(weather);
+        // console.log(weather);
         displayWeatherInfo(weather, loc);
         
     }
@@ -55,7 +55,7 @@ const setBackgroundImage = (id, hr) => {
     else if(id_s === 5) setImage_fontWhite(body, 'rain');
     else if(id_s === 6) setImage_fontWhite(body, 'snow');
     else if(id_s === 7) setImage_fontWhite(body, 'mist');
-    else if(id === 800) setDayNightImage_fontWhite (body, hr, 'clear_sky_day', 'clear_sky_night');
+    else if(id === 800) setDayNightImage_fontWhite (body, hr, 'clear_sky5', 'clear_sky_night');
     else if(id === 801 || id === 802) setImage_font_Day_Night(body, hr, 'few_scattered_clouds_3', 'few_scatterd_clouds_night_1');
     else if(id === 803 || id === 804) setImage_font_Day_Night(body, hr, 'overcast_clouds_day', 'overcast_clouds_night');
 }
@@ -272,7 +272,7 @@ const currentTempForTheDay = (wthr) => {
 //---------Current location display----------------------//
 const currLocationDisplay = async (loc) => {
     const locName = await locationName(loc.latitude, loc.longitude);
-    console.log(locName);
+    // console.log(locName);
     const city = locName.results[0].locations[0].adminArea5;
     const state = locName.results[0].locations[0].adminArea3;
     const country = locName.results[0].locations[0].adminArea1;
@@ -336,13 +336,14 @@ const setDayNightTemp = (wthr) => {
 const createSunriseSunsetContainer = (wthr, event, epoch) => {
     const event_date_time = convert_epoch(epoch);
     const event_time = getCurrentTime(getHours(event_date_time), getMinutes(event_date_time), 'AM');
-    console.log(event_time);
+    // console.log(event_time);
 
     setEventTime(event_time, event);
     const event_icon = setEventIcon(event, '40px', '40px');
 
     const sun_event = document.getElementById(`${event}_container`);
-    sun_event.prepend(event_icon);
+    if(event === 'sunset')  sun_event.append(event_icon);
+    else sun_event.prepend(event_icon);
 }
 
 //-------------Set Event Time------------------------------//
