@@ -108,7 +108,7 @@ const getHours = (full_date) => {
 }
 
 const getMeridian = (full_date) => {
-    if(full_date.getHours() > 12) return 'PM';
+    if(full_date.getHours() > 11) return 'PM';
     return 'AM';
 }
 
@@ -335,7 +335,14 @@ const setDayNightTemp = (wthr) => {
 //------Create sunrise sunset container------//
 const createSunriseSunsetContainer = (wthr, event, epoch) => {
     const event_date_time = convert_epoch(epoch);
-    const event_time = getCurrentTime(getHours(event_date_time), getMinutes(event_date_time), 'AM');
+    let event_time;
+    if(event === 'sunset') {
+        event_time = getCurrentTime(getHours(event_date_time), getMinutes(event_date_time), 'PM');
+    }
+    else {
+        event_time = getCurrentTime(getHours(event_date_time), getMinutes(event_date_time), 'AM');
+    }
+    
     // console.log(event_time);
 
     setEventTime(event_time, event);
