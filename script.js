@@ -55,7 +55,7 @@ const setBackgroundImage = (id, hr) => {
     else if(id_s === 5) setImage_fontWhite(body, 'rain');
     else if(id_s === 6) setImage_fontWhite(body, 'snow');
     else if(id_s === 7) setImage_fontWhite(body, 'mist');
-    else if(id === 800) setDayNightImage_fontWhite (body, hr, 'clear_sky5', 'clear_sky_night');
+    else if(id === 800) setDayNightImage_fontWhite (body, hr, 'clear_sky', 'clear_sky_night');
     else if(id === 801 || id === 802) setImage_font_Day_Night(body, hr, 'few_scattered_clouds_3', 'few_scatterd_clouds_night_1');
     else if(id === 803 || id === 804) setImage_font_Day_Night(body, hr, 'overcast_clouds_day', 'overcast_clouds_night');
 }
